@@ -1,0 +1,103 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[letterpaper,margin=0.75in]{geometry}
+\usepackage{amsmath,amssymb,microtype,xcolor,hyperref}
+\hypersetup{colorlinks=true,urlcolor=blue!45!black,linkcolor=blue!45!black,
+ filecolor=blue!45!black,pdftitle={Chiral SU(5): initial assessment},
+ pdfauthor={Review prepared with Codex},
+ pdfsubject={Claims, completed checks, verification limits and unresolved physical interpretation}}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\setlength{\abovedisplayskip}{5pt}
+\setlength{\belowdisplayskip}{5pt}
+\pagestyle{empty}
+\clubpenalty=10000
+\widowpenalty=10000
+\begin{document}
+\begin{center}
+{\Large\bfseries Chiral SU(5): initial assessment}\par
+\vspace{3pt}
+24 November 2026\quad\textbullet\quad Draft for discussion
+\end{center}
+\vspace{-4pt}
+
+\textbf{Native Lean compilation and the main theorem's axiom check pass.}
+The broader independent validation in our November Yang--Mills and QCD
+reviews has not yet been repeated here.
+
+\textbf{1. Claims.}
+The submission claims a four-dimensional continuum SU(5) theory
+with three generations of left-handed fermions in
+$\mathbf{10}\oplus\overline{\mathbf5}$, at arbitrarily weak reference coupling.
+One lattice history and selected vacuum support the stated reconstruction,
+chirality and running conditions. The gauge-invariant observable theory has
+reflection positivity on specified positive-time tests, locality, positive
+energy, Poincar\'e covariance, a cyclic vacuum with a unique
+translation-invariant direction, and stress-tensor Ward identities.
+Prescribed three-current readings detect handedness. A first-generation
+matter current and a gauge clover observable have a nonzero connected
+vacuum correlation at spacelike-separated compact supports.
+
+The fitted inverse coupling has leading ultraviolet coefficient $43/3$,
+with gauge contribution $55/3$ and screening $4$. The precise conclusion is
+convergence of \emph{window-averaged slopes} as both starting resolution
+and window length increase, uniformly over volume rows and cutoffs that
+contain the window.
+
+\textbf{2. Completed checks.}
+On 24 November, all 16,523 project Lean files compiled using Lean 4.32.0
+on macOS with the nine pinned dependencies. Both entry modules built; all
+project source hashes and build-configuration hashes still match the archive.
+The solution theorem's axiom report contains only \texttt{propext},
+\texttt{Classical.choice} and \texttt{Quot.sound}, with no \texttt{sorryAx}.
+The reference challenge's intentional \texttt{sorry} does not enter the solution.
+
+An independent exact polynomial check of the representation weights gives
+$T(\mathbf{10})=3/2$, $T(\overline{\mathbf5})=1/2$ and cancellation of the
+cubic gauge-anomaly trace. Substitution into the
+\href{https://www-hep.phys.s.u-tokyo.ac.jp/~yujitach/tmp/dummies/dummiessu8.html}{standard one-loop formula}
+gives $b_0=(11/3)5-(2/3)\,3(3/2+1/2)=43/3$.
+This checks group factors, not the submitted RG derivation.
+
+\textbf{3. Problems and unfinished checks.}
+\begin{list}{\textbullet}{\setlength{\leftmargin}{12pt}\setlength{\itemsep}{3pt}\setlength{\parsep}{0pt}\setlength{\topsep}{2pt}}
+\item \textbf{Verification is incomplete.}
+The bundled log reports acceptance by Lean and con-ron. We have not replayed
+Comparator's reference comparison, the second kernel, or the negative and
+containment controls. The log's disabled-sandbox warning is attributed by
+the README to an outer sandbox; we have not verified that explanation.
+Our native run did not reproduce the Linux isolation procedure.
+\item \textbf{Chirality and operator identification.}
+The target ties representations, current readings and
+reconstruction to common data. We have not independently validated the
+lattice-to-continuum field dictionary, the chiral measure and its
+gauge invariance, or exclusion of unwanted mirror degrees of freedom.
+The representation and anomaly checks do not settle these questions.
+\item \textbf{The interaction test.}
+A nonzero mixed connected correlation excludes factorization for the
+specified observables. Nonzero connected correlations also occur between
+composite observables in free theories. An independent comparison with the
+appropriate free gauge--fermion theory, retaining the same operator
+identifications, remains to be done.
+\item \textbf{The running coupling.}
+The normalization explicitly uses the pure-gauge value $55/3$. Matching
+the fitted parameter to a conventional physically defined coupling requires
+further review. A long-window average does not establish a pointwise beta
+function, a two-loop coefficient or all-orders perturbative matching.
+\end{list}
+
+\textbf{Problems observed and scope.}
+No compilation or axiom failure was found. A monitor bug misread the
+line-wrapped axiom list; it was corrected without changing the proof.
+Mass gap, confinement, particle
+spectrum and uniqueness of the continuum limit are not established by
+the reviewed target.
+
+{\small\textbf{Records:}
+\href{su5-native-build/status.html}{Build summary};
+\href{su5-native-build/final-validation.json}{hash and axiom checks};
+\href{su5-review-checks.json}{representation diagnostics}.
+Claim sources: the archive's claim document and joint, relativistic and running targets.
+Prepared with Codex; preliminary review.}
+\end{document}

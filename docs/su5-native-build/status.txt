@@ -1,0 +1,40 @@
+CHIRAL SU(5) — LEAN BUILD STATUS
+========================================================================
+BUILD PASSED
+Updated: 2026-11-24 08:54:48 AM EST
+Final report. Automatic updates have stopped.
+
+Elapsed: 11h 21m     Successful compile steps: 16,523
+Errors: 0     Warnings: 19,125     Free disk: 88.8 GiB
+Lean 4.32.0 / macOS / 16,523 unchanged project source files
+
+STAGES
+  Reference theorem    Passed     16,451 compile steps
+  Solution theorem     Passed         72 compile steps
+  Axiom audit          Passed          0 compile steps
+
+No build errors detected.
+Last compiler output: 6:43:30 AM EST
+
+RECENTLY COMPILED
+  ExactRunning.Final.UV (12s)
+  SU5ExactRunningProof (13s)
+  SU5ExactJointSolution (67s)
+
+RECENT SNAPSHOTS
+  Time         Stage                 Steps       Free GiB
+  6:31 AM      reference-build      16,445         89.1
+  6:34 AM      reference-build      16,447         89.1
+  6:37 AM      reference-build      16,449         89.0
+  6:38 AM      solution-build       16,451         89.0
+  6:41 AM      solution-build       16,515         88.8
+  6:43 AM      axiom-audit          16,523         88.8
+  6:43 AM      axiom-audit          16,523         88.8
+  8:54 AM      complete             16,523         88.8
+
+Counts are build steps, not a completion percentage; more work is
+discovered during the build. Automatic disk stop: 30 GiB free.
+Scope: native compilation and final axiom audit.
+Linux dual-kernel replay: not performed.
+
+Full logs: reference-build.log, solution-build.log, axiom-audit.log

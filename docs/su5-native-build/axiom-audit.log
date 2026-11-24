@@ -1,0 +1,3 @@
+'ChiralSU5.exists_interacting_three_generation_theory_with_exact_running' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

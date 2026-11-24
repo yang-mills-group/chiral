@@ -1,0 +1,21 @@
+{
+  "method": "Exact polynomial expansion on an arbitrary traceless diagonal Hermitian generator of su(5).",
+  "checks": {
+    "quadratic_wedge2_equals_3_fundamental": true,
+    "quadratic_antifundamental_equals_fundamental": true,
+    "quadratic_adjoint_equals_10_fundamental": true,
+    "cubic_wedge2_plus_antifundamental_vanishes": true
+  },
+  "conventional_normalization": {
+    "T_fundamental": "1/2",
+    "T_antisymmetric_10": "3/2",
+    "C_adjoint": "5"
+  },
+  "three_generations_of_left_handed_10_plus_5bar": {
+    "gauge": "55/3",
+    "screening": "4",
+    "b0": "43/3"
+  },
+  "one_loop_formula_source": "https://www-hep.phys.s.u-tokyo.ac.jp/~yujitach/tmp/dummies/dummiessu8.html",
+  "scope": "Independent representation-factor and coefficient arithmetic check; not an independent loop integration, proof of chiral gauge-measure invariance, or validation of the submitted running parameter."
+}

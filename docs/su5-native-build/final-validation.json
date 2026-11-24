@@ -1,0 +1,19 @@
+{
+  "checked_utc": "2026-11-24T13:54:48.307166+00:00",
+  "theorem": "ChiralSU5.exists_interacting_three_generation_theory_with_exact_running",
+  "result": "passed",
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "axiom_log_sha256": "5c9c078e5506b44014784e32524fb74809c900581db2bfb6687665b38bbd270e",
+  "project_source_files_verified": 16523,
+  "configuration_files_verified": [
+    "lakefile.toml",
+    "lake-manifest.json",
+    "lean-toolchain"
+  ],
+  "reporting_correction": "The original exact-string check rejected line-wrapped output. Parsing the target theorem and exact axiom set succeeds. Build and audit logs are unchanged.",
+  "scope": "Native macOS compilation and axiom audit. Linux dual-kernel replay not performed."
+}
