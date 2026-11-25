@@ -2,9 +2,9 @@
 
 ## [Read the assessment and reflection-positivity appendix (PDF)](docs/assessment-1.pdf)
 
-**Final assessment, 25 November 2026.** [LaTeX source](docs/assessment-1.tex).
+**Summary assessment, 25 November 2026.** [LaTeX source](docs/assessment-1.tex).
 
-This repository collects chiral gauge-theory submissions and the group's checks and assessments. The first submission is OpenAI's chiral SU(5) construction, submitted **15 November 2026** according to OpenAI's correspondence. It claims a four-dimensional continuum theory with three generations of left-handed fermions in the **10** and **5̄** representations, obtained from a common lattice history and selected vacuum.
+This repository collects chiral gauge-theory submissions and the group's checks and assessments. The first submission is OpenAI's chiral SU(5) construction, received by the group on **15 November 2026**. It claims a four-dimensional continuum theory with three generations of left-handed fermions in the **10** and **5̄** representations, obtained from a common lattice history and selected vacuum.
 
 The submitted theorem includes relativistic reconstruction, chirality conditions, a nonzero mixed matter–gauge correlation, and an ultraviolet running condition with coefficient **43/3**. The running statement concerns averages over increasingly long ultraviolet windows. The physical interpretation of the chiral fields, interaction test, and fitted coupling requires further review.
 
@@ -14,7 +14,7 @@ The submitted theorem includes relativistic reconstruction, chirality conditions
 |---|---|---|
 | 15 November 2026 | [OpenAI-chiral-20261115](https://github.com/yang-mills-group/OpenAI-chiral-20261115) | [Assessment and reflection-positivity appendix](docs/assessment-1.pdf) |
 
-The submission date follows [OpenAI's chronology](https://github.com/yang-mills-group/submissions/blob/main/docs/submission-dates.md). The assessment concerns the package preserved at [archive commit `986dd35`](https://github.com/yang-mills-group/OpenAI-chiral-20261115/tree/986dd35e0c0c930b90b0cd5886fb066ff7126be0).
+The [submission date](https://github.com/yang-mills-group/submissions/blob/main/docs/submission-dates.md) is the date the group received the materials. The assessment concerns the package preserved at [archive commit `986dd35`](https://github.com/yang-mills-group/OpenAI-chiral-20261115/tree/986dd35e0c0c930b90b0cd5886fb066ff7126be0).
 
 All 16,523 project Lean files compiled on macOS with the pinned dependencies. The main theorem's axiom audit found only the standard axioms and no `sorryAx`. An independent representation calculation checks the group factors, cubic anomaly cancellation, and the arithmetic giving the one-loop coefficient. This does not independently verify the submitted RG derivation.
 

@@ -1,8 +1,8 @@
 # Chiral SU(5) assessment
 
-The [final assessment](assessment-1.pdf), dated **25 November 2026**, has a one-page review followed by a one-page appendix on reflection positivity. [LaTeX source](assessment-1.tex). The appendix distinguishes auxiliary positivity at finite cutoff from positivity of the limiting expectations and discusses the result of Lu and Shao. The [source trace](su5-reflection-positivity-trace.txt) records the relevant definitions and lemmas.
+The [summary assessment](assessment-1.pdf), dated **25 November 2026**, has a one-page review followed by a one-page appendix on reflection positivity. [LaTeX source](assessment-1.tex). The appendix distinguishes auxiliary positivity at finite cutoff from positivity of the limiting expectations and discusses the result of Lu and Shao. The [source trace](su5-reflection-positivity-trace.txt) records the relevant definitions and lemmas.
 
-The original submission is preserved in [OpenAI-chiral-20261115](https://github.com/yang-mills-group/OpenAI-chiral-20261115/tree/986dd35e0c0c930b90b0cd5886fb066ff7126be0). OpenAI's [correspondence](https://github.com/yang-mills-group/submissions/blob/main/docs/submission-dates.md) confirms **15 November** as its reported submission date, distinct from the assessment date.
+The original submission is preserved in [OpenAI-chiral-20261115](https://github.com/yang-mills-group/OpenAI-chiral-20261115/tree/986dd35e0c0c930b90b0cd5886fb066ff7126be0). The group [received the submission on **15 November 2026**](https://github.com/yang-mills-group/submissions/blob/main/docs/submission-dates.md), distinct from the assessment date.
 
 ## Completed checks
 
