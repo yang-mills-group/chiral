@@ -2,7 +2,7 @@
 
 The [one-page assessment](assessment-1.pdf), dated **24 November 2026**, summarizes the claims, completed checks, and remaining questions. [LaTeX source](assessment-1.tex). It is a draft for group discussion.
 
-The original submission is preserved in [OpenAI-chiral-20261115](https://github.com/yang-mills-group/OpenAI-chiral-20261115/tree/986dd35e0c0c930b90b0cd5886fb066ff7126be0). The **15 November** submission date is a provisional label, distinct from the assessment date.
+The original submission is preserved in [OpenAI-chiral-20261115](https://github.com/yang-mills-group/OpenAI-chiral-20261115/tree/986dd35e0c0c930b90b0cd5886fb066ff7126be0). OpenAI's [correspondence](https://github.com/yang-mills-group/submissions/blob/main/docs/submission-dates.md) confirms **15 November** as its reported submission date, distinct from the assessment date.
 
 ## Completed checks
 
