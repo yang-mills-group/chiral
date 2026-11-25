@@ -32,4 +32,4 @@ The reflection-positivity appendix traces the finite-cutoff and limiting argumen
 
 ## Making a submission
 
-Send proposed submissions and feedback to [yangmills4d@gmail.com](mailto:yangmills4d@gmail.com). Include the authors, claimed results, a fixed revision of the materials, and reproduction instructions for formal checks. The group's [submission requirements](https://github.com/yang-mills-group/.github-private/blob/main/profile/README.md#making-a-submission) apply. Inclusion does not constitute endorsement, and the group does not promise to post or review submissions.
+Send proposed submissions and feedback to [yangmills4d@gmail.com](mailto:yangmills4d@gmail.com). Include the authors, claimed results, a fixed revision of the materials, and reproduction instructions for formal checks. The group's [submission requirements](https://github.com/yang-mills-group/.github/blob/main/profile/README.md#making-a-submission) apply. Inclusion does not constitute endorsement, and the group does not promise to post or review submissions.
