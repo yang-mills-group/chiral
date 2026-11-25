@@ -1,6 +1,6 @@
 # Chiral SU(5) assessment
 
-The [one-page assessment](assessment-1.pdf), dated **24 November 2026**, summarizes the claims, completed checks, and remaining questions. [LaTeX source](assessment-1.tex). It is a draft for group discussion.
+The [final assessment](assessment-1.pdf), dated **25 November 2026**, has a one-page review followed by a one-page appendix on reflection positivity. [LaTeX source](assessment-1.tex). The appendix distinguishes auxiliary positivity at finite cutoff from positivity of the limiting expectations and discusses the result of Lu and Shao. The [source trace](su5-reflection-positivity-trace.txt) records the relevant definitions and lemmas.
 
 The original submission is preserved in [OpenAI-chiral-20261115](https://github.com/yang-mills-group/OpenAI-chiral-20261115/tree/986dd35e0c0c930b90b0cd5886fb066ff7126be0). OpenAI's [correspondence](https://github.com/yang-mills-group/submissions/blob/main/docs/submission-dates.md) confirms **15 November** as its reported submission date, distinct from the assessment date.
 
@@ -18,4 +18,4 @@ The original submission is preserved in [OpenAI-chiral-20261115](https://github.
 | [Representation diagnostics](su5-review-checks.json) · [calculation script](su5-review-checks.py) | Exact group-factor and anomaly checks and the conventional one-loop coefficient |
 | [Build summary](su5-native-build/status.txt) · [HTML version](su5-native-build/status.html) | Recorded final status of the native build |
 
-These records now include the completed independent Comparator replay and both kernel checks, in addition to native macOS compilation, the axiom audit, and representation calculations. The older native-build records describe the stage before replay; their scope statements are historical. The replay checked fresh macOS exports on Linux with real bubblewrap, rather than rebuilding the source on Linux. The fresh export hashes differ from the supplied acceptance record, with matching byte counts; the cause remains unresolved. The [replay notes](su5-comparator/README.md) state the completed checks and limits.
+These records now include the completed independent Comparator replay and both kernel checks, in addition to native macOS compilation, the axiom audit, and representation calculations. The native-build logs and receipts retain their original timestamps; the final status summary also links to the completed replay. The replay checked fresh macOS exports on Linux with real bubblewrap, rather than rebuilding the source on Linux. The fresh export hashes differ from the supplied acceptance record, with matching byte counts; the cause remains unresolved. The [replay notes](su5-comparator/README.md) state the completed checks and limits.

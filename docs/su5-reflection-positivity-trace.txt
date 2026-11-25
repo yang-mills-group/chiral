@@ -1,0 +1,176 @@
+CHIRAL SU(5): REFLECTION-POSITIVITY DEPENDENCY TRACE
+Finalized 25 November 2026; source inspection 24 November 2026
+
+Finding
+The route used by the final theorem proves exact reflection positivity for
+restricted, buffered tests of an auxiliary finite-regulator functional. It
+compares the actual finite-regulator expectations to that auxiliary functional
+with an error tending to zero as the UV cutoff is removed. Positivity is then
+passed to common limiting expectations and finally expressed as Gram positivity
+for the selected continuum state's admissible positive-slab words.
+
+This route does not establish exact full-field reflection positivity of the
+original chiral lattice theory at each finite regulator. Positivity for admitted
+supports can already be stated after the UV limit at fixed volume (Tower/Reflect,
+I_axial), before the subsequent volume limit and continuum reconstruction.
+
+Key distinctions in the source
+* Ignite: X_s uses the actual trajectory .X; Z_s uses the auxiliary donor .Q.
+  compass/listen read X_s; solder/collector read Z_s.
+* Smokestack: Metered.fund is positivity for AtSupport false on a buffered band,
+  not an unrestricted full Weyl-field algebra.
+* Roll: sharp uses listen; hot uses collector. rate bounds their difference by
+  any positive tolerance eventually in the cutoff. both gives common limits.
+* Praise: lamp passes positivity through the UV and period limits using
+  ge_of_tendsto twice; matrix gives the resulting finite-family PSD statement.
+* Tower/Upright -> Tower/Ark -> Selected/Vacuum build the common Hilbert-space
+  hierarchy from these limiting positive forms.
+* Aria/Legion: duo_positive identifies the selected state's reflection matrix
+  with a Gram matrix on the restricted Posy domain.
+* SU5RelativisticProof supplies its reflectionPositive field using duo_positive.
+
+Interpretive limit
+This is a focused reading of the formal proof route, not an independent audit
+that the auxiliary-to-actual matching and observable definitions faithfully
+capture the intended physical overlap Weyl theory. It explains why finite-spacing
+nonpositivity of the full overlap Weyl field algebra does not by itself contradict
+this formal continuum RP claim. The observable correspondence remains to be audited.
+
+SOURCE EXCERPTS (paths relative to the inspected archive)
+
+YM/SU5/FiniteGaugeData/Marked/Journey/Ignite.lean
+25: local notation "Zₛ" => ((Y.voyage i).Q k p).gram s
+26: local notation "lₛ" => (Y.voyage i).CapeT s
+27: local notation "K" => tent Y h
+28: local notation "σ" => Λ.block
+29: local notation "m"=> Y.ir i
+30: abbrev momentm := mesh (Y.ir i) Λ.R.L s
+31: local notation "μ"=> momentm Y i s
+32:
+33: private theorem ij : MeterQ Λ.V 1 2 6 Λ.N0 Λ.J Chi.canonical Λ.h Λ.R0 Λ.δ Λ.x Y.meter:= Y.paidM
+34: abbrev side := Λ.Ctor (Y.ir i) s
+35: local notation "α" => side Y i s
+36: /-- Account at observing s in cover units for that observing lattice. -/
+37: def vowel (f:Buffered.Mark α)(he:Bool:=false):ℂ:=if he then markedRead f lₛ (denZ Zₛ Λ.U lₛ)/partitionZ Zₛ Λ.U lₛ else markedRead f lₛ (denZ Xₛ Λ.U lₛ)/partitionZ Xₛ Λ.U lₛ
+38: abbrev solder (f:Buffered.Mark α):ℂ:= markedRead f lₛ (denZ Zₛ Λ.U lₛ)/partitionZ Zₛ Λ.U lₛ
+39: abbrev compass (f:Buffered.Mark α):ℂ:= markedRead f lₛ (denZ Xₛ Λ.U lₛ)/partitionZ Xₛ Λ.U lₛ
+40: private lemma depth : Py.buoy (Y.ivory k) < Y.uv k:= LocalLimit.deeper ..
+41:
+
+YM/SU5/FiniteGaugeData/Marked/Journey/Ignite.lean
+74: -- keep it explicit to see which data are re-read.
+75: def deltaL : Loom ((K).c μ):= (terrain Y h m s).symm ▸ lₛ
+76: def send (f:Mark ((K).c μ)):Mark (Λ.Ctor m s):= (terrain Y h m s) ▸ f
+77: def collector (f:Mark ((K).c μ)):= X (send Y h i s f)
+78: def listen (f:Mark ((K).c μ)):= compass Y i k s (send Y h i s f)
+
+YM/SU5/FiniteGaugeData/Marked/Journey/Ignite.lean
+90: lemma boxprice (j:s≤Y.uv k): Metered (tent Y h) μ (deltaL Y h i s) (collector Y h i k p s) (duetCharge Y s):=by
+91:   have e:Measurable lₛ:= ((Y.voyage i).ownership s).paid.bill
+92:   have ht':= Marks.can_read _ _ _ _ g.priceH
+93:   apply congrMeter (terrain Y h m s).symm X lₛ _ (duetCharge_nn Y s) (fee Y i k p s g)
+94:     (fun f t v w=> by unfold solder; rw [mark_add e v w ht',add_div])
+95:     (fun c f=> by unfold solder; rw [mark_smul,mul_div_assoc])
+96:     (by unfold solder; rw [markvac]; exact div_self g.priceH.valid)
+97:     (fun a z f u=> burning Y i k p s g j u)
+98:     ⟨_,_,_,((Y.voyage i).ownership s).paid⟩ (tissue Y i s)
+99:
+
+YM/SU5/FiniteGaugeData/Marked/Journey/Smokestack.lean
+22: structure Metered (K:Calibration)(m:Side)(L:Loom (K.c m))(X:Mark (K.c m)→ℂ) (D:ℝ):Prop where
+23:   positive : 0 ≤ D
+24:   tally(f:Mark (K.c m))(h:Envelope f): ‖X f‖ ≤ Real.exp (D * (m.val:ℝ)^4) * cash L f
+25:   sum (f g:Mark (K.c m))(h:Envelope f)(p:Envelope g): X (f+g)=X f+X g
+26:   mult(a:ℂ)(f:Mark (K.c m)):X (a • f)=a*X f
+27:   unit:X 1=1
+28:   fund (a:Axis)(z:ℤ)(f:Mark (K.c m))(h:AtSupport false (band (K.c m) a (Heat.gaugeShift K.B z) K.ℓ) f):
+29:     0 ≤ X (reflMark a (Heat.gaugeShift K.B z) f*f)
+30:   roof: ∃ c t k,Skye.Roof (K.c m) c t k L
+31:   territory: Advance.LoomLaw L K.w
+
+YM/SU5/FiniteGaugeData/Marked/Journey/Roll.lean
+26: def sharp (a:Family (tent Y H)):= listen Y H i k s (a (m i))
+27: def hot (a:Family (tent Y H)):=if p:(Y.voyage i).kick ≤ k then collector Y H i k p s (a (m i)) else 0
+
+YM/SU5/FiniteGaugeData/Marked/Journey/Roll.lean
+50: lemma rate (x:TestFamily (tent Y H) true f)(e:ℝ)(q:0<e): ∀ᶠ k:ℕ in atTop,∀ i:ℕ,(Y.voyage i).kick ≤ k → ‖sharp Y H s i k f - hot Y H s i k f‖ ≤ e:=by
+51:   obtain ⟨S,w⟩:=x.paid
+52:   obtain ⟨v,u⟩:= valuation Y H w
+53:   have hv:0 ≤ v:= (norm_nonneg _).trans (u 1 (1,1)); have h:0<v+1:=by positivity
+54:   filter_upwards [Y.thaw s (e/(v+1)) (div_pos q h)] with k t i p
+55:   have he:v≤ v+1:=by linarith
+56:   obtain ⟨hx,V⟩:= envCast (terrain Y H (Y.ir i) s) ((Y.voyage i).ownership s).paid.bill (w.support (m i)).env (fun x=> (u _ x).trans he)
+57:   let g:= (send Y H i s (f (m i))) ∘ drawn (ρ i)
+58:   change Envelope g at hx
+59:   unfold hot; rw [dif_pos p]
+60:   exact (t i p g (v+1) hx.meas V).trans (div_mul_cancel₀ e h.ne').le
+61:
+
+YM/SU5/FiniteGaugeData/Marked/Journey/Roll.lean
+113: lemma both (x:TestFamily (tent Y H) true f): ∃ F z, Fig Y H s (u:=u) (v:=v) f F z ∧ FigA Y H s (u:=u) (v:=v) f F z:=by
+114:   obtain ⟨F,z,t⟩:=p.recursion Y H s x
+115:   let δ (i k):= sharp Y H s i k f-hot Y H s i k f
+116:   have he (n e:ℕ→ℕ)(a:Tendsto e atTop atTop)(hp:∀ᶠ i:ℕ in atTop,(Y.voyage (n i)).kick ≤ e i): Tendsto (fun i=>δ (n i) (e i)) atTop (𝓝 0):= by
+117:     refine Metric.tendsto_nhds.mpr fun r h=> ?_
+118:     filter_upwards [a.eventually (rate Y H s x _ (half_pos h)),hp] with y v t
+119:     rw [dist_zero_right]; exact (v _ t).trans_lt (by linarith)
+120:   refine ⟨F,z,t,⟨?_,t.periods,?_⟩⟩
+121:   · intro n; simpa only [δ,sub_add_cancel,zero_add] using (he (fun _=> n) v p.grow_k.tendsto_atTop ((p.pass Y H s n).mono (fun _ h=> h.depth))).add (t.inner n)
+122:   intro v' h
+123:   simpa only [δ,sub_add_cancel,zero_add] using (he u _ (p.walks Y H h) ((p.cone_ferry Y H s h).mono fun _ h=> h.depth)).add (t.paths v' h)
+124: -- total definitions for both limits, at once; the marks qualified in the
+125: -- corollary (and even their gauge non-invariant Borel extension)
+126: def field (f:Family K):ℕ→ ℂ := if x:TestFamily K true f then (p.both Y H s x).choose else 0
+
+YM/SU5/FiniteGaugeData/Marked/Journey/Praise.lean
+41: lemma lamp {f}(a: Eligible K true f):0 ≤ Θ (thetaK K f*f):=by
+42:   apply ge_of_tendsto (p.booked Y h s (a.forget.ref.mul a.forget)).1.periods
+43:   filter_upwards [((momentum Y s).comp p.grow_i.tendsto_atTop).eventually a.fits_time] with i w
+44:   apply ge_of_tendsto ((p.booked Y h s (a.forget.ref.mul a.forget)).1.inner (u i))
+45:   filter_upwards [p.pass Y h s (u i)] with n H
+46:   unfold hot; rw [dif_pos H.depth]; exact (boxprice Y h _ _ H.depth s H.fire H.enters).fund 3 (K).ζ _ w
+
+YM/SU5/FiniteGaugeData/Marked/Journey/Praise.lean
+65: /-- Explicit Gram version: can test ANY finite list from the class with its admitted
+66: cutoff limit then period limit. -/
+67: theorem matrix {I : Type*} (F : I → eligible K true) [Fintype I] :
+68:     (Matrix.of (fun i j=> Θ (thetaK K (F i).val*(F j).val))).PosSemidef := by
+69:  apply Matrix.posSemidef_iff_dotProduct_mulVec.mpr; constructor
+
+YM/SU5/FiniteGaugeData/Tower/Reflect.lean
+112:  unfold hot; rw [dif_pos u.depth]; exact (boxprice Y H _ _ u.depth s u.fire u.enters).fund a z _ ((p.support _).mono b)
+113: -- use also at fixed periods only when *torus* support fits, not asserted before
+114: lemma I_axial (a:Axis)(z:ℤ)(p:TestFamily K true f)(n:ℕ)(b:AtSupport false (band ((K).c (momentm Y n s)) a (t₀ z) (K).ℓ) (f (momentm Y n s))):0≤ I s ((φ a z) f*f) n:=by
+115:  obtain ⟨x,h⟩:=p.paid
+116:  apply ge_of_tendsto ((warm_limit Y H V s ((aux_test (axial _ a _ h)).mul p)).inner n)
+117:  filter_upwards [V.pick.pass Y H s _] with t u; unfold hot; rw [dif_pos u.depth]; exact (boxprice Y H _ _ u.depth s u.fire u.enters).fund a z _ b
+
+YM/SU5/Aria/Legion.lean
+85: /-- reflection PSD on arbitrary arranged words in positive slabs (needn't be uniformly at the same fixed volume/shape).
+86:     We deliberately test `commonWell` (multi-axis system) here. -/
+87: abbrev Posy := ↥(P.Crest0 j∩P.roll0 j)
+88: variable (k:Axis)
+89: def duo (x':P.Posy k)(y:P.Posy k):ℂ := P.commonWell j x Σ₀ Σ₁ (P.joinHeight k x'.val y.val)
+90: lemma duo_positive (J:P.Ellis j x){I:Type*}[Fintype I](b:I→P.Posy k):
+91:     Matrix.PosSemidef (Matrix.of fun i y=> P.duo j x k (b i) (b y)) := by
+92:  let Z:= P.ManyF k (P.advocate j x k); let B (i:I): Z:= P.parses k (P.advocate j x k) (b i).val; refine Eq.mp ?_ (Matrix.posSemidef_gram ℂ B) -- ? approach ↔ no
+93:  refine congrArg Matrix.PosSemidef ?_; ext1 i y; exact (P.common_self k (P.advocate j x k) _ _ (b i).property.2 (b y).property.2 (b i).property.1 (b y).property.1).trans (P.common_cult j x _ _ _ J (List.Perm.refl _) (P.concat_toRank k (b i).property.2 (b i).property.1 (b y).property.2 (b y).property.1)).symm
+94: end Spine
+
+SU5RelativisticTarget.lean
+104:   /-- Gram positivity of arbitrary finite families of admissible positive-time words,
+105:   with reflection in coordinate direction k and adjoint on the reflected word. -/
+106:   reflectionPositive (k : Axis) (n : ℕ) (A : Fin n → process.Posy k) :
+107:     Matrix.PosSemidef (Matrix.of fun i j => process.duo 3 vacuum k (A i) (A j))
+
+SU5RelativisticProof.lean
+86:
+87: /-- Extract the physical conclusions from the existence theorem on its particular
+88: witness. Reflection positivity uses the selected Euclidean sector directly. -/
+89: theorem relativisticClauses_of_oneTheory (h : OneTheory Certificate) :
+90:     RelativisticClauses Certificate where
+91:   lattice := h.bare
+92:   matterRepresentation := h.bare.families
+93:   continuumObservables := h.uses_these_fields
+94:   reflectionPositive k _ A := process.duo_positive 3 vacuum k costAnalysis A
+95:   euclideanSector := h.reconstruction.sector_geometry

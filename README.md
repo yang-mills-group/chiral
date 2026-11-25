@@ -1,8 +1,8 @@
 # Chiral SU(5) — Results and verification
 
-## [Read the draft one-page assessment (PDF)](docs/assessment-1.pdf)
+## [Read the assessment and reflection-positivity appendix (PDF)](docs/assessment-1.pdf)
 
-**Private draft for discussion, 24 November 2026.** [LaTeX source](docs/assessment-1.tex).
+**Final assessment, 25 November 2026.** [LaTeX source](docs/assessment-1.tex).
 
 This repository collects chiral gauge-theory submissions and the group's checks and assessments. The first submission is OpenAI's chiral SU(5) construction, submitted **15 November 2026** according to OpenAI's correspondence. It claims a four-dimensional continuum theory with three generations of left-handed fermions in the **10** and **5̄** representations, obtained from a common lattice history and selected vacuum.
 
@@ -12,7 +12,7 @@ The submitted theorem includes relativistic reconstruction, chirality conditions
 
 | Submission date | Original submission | Assessment |
 |---|---|---|
-| 15 November 2026 | [OpenAI-chiral-20261115](https://github.com/yang-mills-group/OpenAI-chiral-20261115) | [Draft one-page assessment](docs/assessment-1.pdf) |
+| 15 November 2026 | [OpenAI-chiral-20261115](https://github.com/yang-mills-group/OpenAI-chiral-20261115) | [Assessment and reflection-positivity appendix](docs/assessment-1.pdf) |
 
 The submission date follows [OpenAI's chronology](https://github.com/yang-mills-group/submissions/blob/main/docs/submission-dates.md). The assessment concerns the package preserved at [archive commit `986dd35`](https://github.com/yang-mills-group/OpenAI-chiral-20261115/tree/986dd35e0c0c930b90b0cd5886fb066ff7126be0).
 
@@ -23,6 +23,8 @@ All 16,523 project Lean files compiled on macOS with the pinned dependencies. Th
 The replay used fresh exports from the macOS build, checked on Linux with real bubblewrap, read-only inputs, and no external network. It did not rebuild the source on Linux. Both fresh export hashes differ from OpenAI's recorded hashes, although their byte counts match; the cause remains unresolved. The successful checks apply to the fresh exports identified in our records.
 
 Further physical checks are needed for the chiral measure and gauge invariance, exclusion of mirror degrees of freedom, the operator dictionary, and comparison with an appropriate free theory. Mass gap, confinement, particle spectrum, and uniqueness of the continuum limit are not established by the reviewed target.
+
+The reflection-positivity appendix traces the finite-cutoff and limiting arguments and discusses [Lu and Shao, arXiv:2611.20084](https://arxiv.org/abs/2611.20084). The allowed observable algebra and its physical interpretation remain subjects for further review.
 
 ## Documents and verification records
 

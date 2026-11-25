@@ -1,13 +1,16 @@
 {
-  "checked_utc": "2026-11-25T01:47:47.588818+00:00",
-  "pages": 1,
+  "checked_utc": "2026-11-25T14:16:27.057733+00:00",
+  "edition_date": "2026-11-25",
+  "status": "final",
+  "pages": 2,
   "compile": "passed",
   "latex_warnings": [],
   "qpdf_check": "passed",
-  "visual_inspection": "Final one-page PDF rendered and inspected; no clipping or overlap. Original 11pt font retained.",
-  "scope": "Assessment updated from the completed independent Comparator replay. Copied acceptance and logs checked against the run; current source, export and tool hashes reverified. No new proof run.",
-  "tex_sha256": "82394ca21a2a0f3c7d3e258acbee202f496dae034e665ea99c7071f484b27e73",
-  "pdf_sha256": "c9bf0ab4e981fee7efb935147bbd1d7afc227f5805615dd3b18cbd91175cbd2a",
-  "evidence_import_sha256": "e98655e8549b842e7bde3eeafcc6b333a816c28976da2d0ce777100e8e9e2a9c",
-  "group_pdf_links_checked": 3
+  "visual_inspection": "All pages rendered and visually inspected; no clipping or overlap. Edition date and absence of draft labels also checked in extracted PDF text.",
+  "scope": "Final QCD-reader edit and reflection-positivity appendix, dated 25 November 2026. No new Lean or Comparator run.",
+  "tex_sha256": "b6c63f7ef7d0a639266ef2cc64ac8bc67d2577b2e65b15e1bbaa40d6c1d2e5da",
+  "pdf_sha256": "251b9c18638a56dfe279d73e37d334f677694d5c11a22c00e636de1402f2b6f5",
+  "reflection_trace_sha256": "7d931bad0582468a4d47258b5bae846f1beaf4eb283df3506c9dac594bf91f79",
+  "evidence_import_sha256": "9528f7e7ec55ad94f30a35c9d5a687d80429a0785547464b3da2bbdee883d43a",
+  "previous_pdf_sha256": "c9bf0ab4e981fee7efb935147bbd1d7afc227f5805615dd3b18cbd91175cbd2a"
 }

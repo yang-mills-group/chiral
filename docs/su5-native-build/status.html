@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="refresh" content="180"><title>SU(5) Lean build — live status</title>
+<title>SU(5) Lean build — final report</title>
 <style>
 *{box-sizing:border-box}body{margin:0;padding:24px;background:#eef1f5;color:#182333;font:14px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
 main{max-width:900px;margin:0 auto;background:white;border:1px solid #d8dfe8;border-radius:12px;padding:25px 30px}
@@ -13,13 +13,13 @@ table{width:100%;border-collapse:collapse;font-size:12px}td,th{text-align:left;p
 .note{font-size:12px;margin:9px 0}footer{border-top:1px solid #e7ebf0;padding-top:12px;margin-top:18px;font-size:11px;color:#64748b}a{color:#1d4ed8}
 @media(max-width:600px){body{padding:8px}main{padding:18px}header{display:block}.stats{grid-template-columns:repeat(2,1fr)}}
 @page{size:letter;margin:12mm}@media print{body{padding:0;background:white}main{border:0;padding:0;max-width:none}a{color:inherit;text-decoration:none}}
-</style></head><body><main>
+</style></head><body><main><p class="note"><a href="../su5-comparator/status.html"><strong>Comparator verification is now in progress — view final report</strong></a></p>
 <header><div><div class="state">BUILD PASSED</div><h1>Chiral SU(5) · Lean build</h1><div class="muted small">Native macOS · Lean 4.32.0 · 16,523 project source files</div></div>
-<div class="muted small">Updated 2026-11-24 08:54:48 AM EST<br>Final report. Automatic updates have stopped.</div></header>
+<div class="muted small">Finalized 25 November 2026<br>Build validation: 24 November 2026, 08:54:48 AM EST<br>Final report. Automatic updates have stopped.</div></header>
 <div class="stats"><div class="stat"><div class="label">Elapsed</div><div class="value">11h 21m</div></div>
 <div class="stat"><div class="label">Successful compile steps</div><div class="value">16,523</div></div>
 <div class="stat"><div class="label">Errors in logs</div><div class="value">0</div></div>
-<div class="stat"><div class="label">Free disk space</div><div class="value">88.8 GiB</div></div></div>
+<div class="stat"><div class="label">Free disk at build</div><div class="value">88.8 GiB</div></div></div>
 <table><thead><tr><th>Stage</th><th>Status</th><th class="num">Compile steps</th></tr></thead><tbody><tr><td>Reference theorem</td><td>Passed</td><td class="num">16,451</td></tr><tr><td>Solution theorem</td><td>Passed</td><td class="num">72</td></tr><tr><td>Axiom audit</td><td>Passed</td><td class="num">0</td></tr></tbody></table>
 <p class="note">No build errors detected. Warnings logged: 19,125. Last compiler output: 6:43:30 AM EST.</p>
 <h2>Most recent compiled modules</h2><pre>ExactRunning.Final.UV (12s)
@@ -27,5 +27,5 @@ SU5ExactRunningProof (13s)
 SU5ExactJointSolution (67s)</pre>
 <h2>Recent snapshots</h2><table><thead><tr><th>Local time</th><th>Stage</th><th class="num">Compile steps</th><th class="num">Free GiB</th></tr></thead><tbody><tr><td>6:31 AM</td><td>reference-build</td><td class="num">16,445</td><td class="num">89.1</td></tr><tr><td>6:34 AM</td><td>reference-build</td><td class="num">16,447</td><td class="num">89.1</td></tr><tr><td>6:37 AM</td><td>reference-build</td><td class="num">16,449</td><td class="num">89.0</td></tr><tr><td>6:38 AM</td><td>solution-build</td><td class="num">16,451</td><td class="num">89.0</td></tr><tr><td>6:41 AM</td><td>solution-build</td><td class="num">16,515</td><td class="num">88.8</td></tr><tr><td>6:43 AM</td><td>axiom-audit</td><td class="num">16,523</td><td class="num">88.8</td></tr><tr><td>6:43 AM</td><td>axiom-audit</td><td class="num">16,523</td><td class="num">88.8</td></tr><tr><td>8:54 AM</td><td>complete</td><td class="num">16,523</td><td class="num">88.8</td></tr></tbody></table>
 <footer>Counts are successful build-log entries, not a completion percentage; Lake discovers more work as it builds. The build stops below 30 GiB free.<br>
-Scope: native compilation and final axiom audit. The supplied Linux dual-kernel replay has not been performed.<br><a href="reference-build.log">Reference theorem log</a> · <a href="solution-build.log">Solution theorem log</a> · <a href="axiom-audit.log">Axiom audit log</a> · <a href="status.txt">Plain-text report</a></footer>
+Scope: native compilation and final axiom audit. The subsequent Linux Comparator replay and both kernel checks passed; see <a href="../su5-comparator/status.html">the replay record</a>.<br><a href="reference-build.log">Reference theorem log</a> · <a href="solution-build.log">Solution theorem log</a> · <a href="axiom-audit.log">Axiom audit log</a> · <a href="status.txt">Plain-text report</a></footer>
 </main></body></html>

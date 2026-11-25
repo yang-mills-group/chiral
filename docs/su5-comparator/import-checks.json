@@ -212,8 +212,8 @@
     {
       "source": "outputs/su5-comparator/status.html",
       "path": "status.html",
-      "source_sha256": "558651c6b3e9cf7f5cc109caa9bc7ebc8a558d8eb3a92ccb80e92495589445d8",
-      "sha256": "afc8f29136bffcd15d9f659337f9eed3ee8bab3d2281bdf38bee3587f522a3f4"
+      "source_sha256": "7d2f0e92044aa14244a5f8165cfb82fcb8d22c0af7cad2ca4ab9dc222adadebe",
+      "sha256": "50338c56907afb1a2e2bd6dc883605954b95e3c3a0c674c9723cf782d5b3a6d5"
     },
     {
       "source": "outputs/su5-comparator/status.json",
@@ -224,8 +224,8 @@
     {
       "source": "outputs/su5-comparator/status.txt",
       "path": "status.txt",
-      "source_sha256": "f8a090b6abf9471252e365474bbe365e2aabd2a80e38095f63694d12d16600dd",
-      "sha256": "f8a090b6abf9471252e365474bbe365e2aabd2a80e38095f63694d12d16600dd"
+      "source_sha256": "33e43c741fe451932e95d9d730fc08bec7804ab7b309ec8d6b4a0a759b45f851",
+      "sha256": "33e43c741fe451932e95d9d730fc08bec7804ab7b309ec8d6b4a0a759b45f851"
     },
     {
       "source": "work/su5-comparator/Dockerfile",
@@ -323,5 +323,22 @@
       "source_sha256": "0f407bbbcfacce3549ee84c33deb798707a42494c9a184080df5ed3a7bd3a195",
       "sha256": "0f407bbbcfacce3549ee84c33deb798707a42494c9a184080df5ed3a7bd3a195"
     }
-  ]
+  ],
+  "editorial_finalization": {
+    "checked_utc": "2026-11-25T14:16:27.057733+00:00",
+    "date": "2026-11-25",
+    "scope": "Final display labels and current assessment link. Original acceptance, proof inputs, configurations and logs unchanged.",
+    "files": [
+      {
+        "path": "status.html",
+        "import_sha256": "afc8f29136bffcd15d9f659337f9eed3ee8bab3d2281bdf38bee3587f522a3f4",
+        "final_sha256": "50338c56907afb1a2e2bd6dc883605954b95e3c3a0c674c9723cf782d5b3a6d5"
+      },
+      {
+        "path": "status.txt",
+        "import_sha256": "f8a090b6abf9471252e365474bbe365e2aabd2a80e38095f63694d12d16600dd",
+        "final_sha256": "33e43c741fe451932e95d9d730fc08bec7804ab7b309ec8d6b4a0a759b45f851"
+      }
+    ]
+  }
 }

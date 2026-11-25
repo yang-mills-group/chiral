@@ -4,11 +4,10 @@
 \usepackage[letterpaper,margin=0.75in]{geometry}
 \usepackage{amsmath,amssymb,microtype,xcolor,hyperref}
 \hypersetup{colorlinks=true,urlcolor=blue!45!black,linkcolor=blue!45!black,
- filecolor=blue!45!black,pdftitle={Chiral SU(5): initial assessment},
- pdfauthor={Review prepared with Codex},
- pdfsubject={Claims, completed checks, verification limits and unresolved physical interpretation}}
+ filecolor=blue!45!black,pdftitle={Chiral SU(5): review of the construction},
+ pdfsubject={Claims, proof checks, physical interpretation and reflection positivity}}
 \setlength{\parindent}{0pt}
-\setlength{\parskip}{5pt}
+\setlength{\parskip}{4pt}
 \setlength{\abovedisplayskip}{5pt}
 \setlength{\belowdisplayskip}{5pt}
 \pagestyle{empty}
@@ -16,88 +15,169 @@
 \widowpenalty=10000
 \begin{document}
 \begin{center}
-{\Large\bfseries Chiral SU(5): initial assessment}\par
+{\Large\bfseries Chiral SU(5): review of the construction}\par
 \vspace{3pt}
-24 November 2026\quad\textbullet\quad Draft for discussion
+25 November 2026
 \end{center}
 \vspace{-4pt}
 
-\textbf{The build, reference comparison and both kernel checks pass.}
-Physical interpretation and export reproducibility still require further review.
+\textbf{The proof passes the formal checks described below.}
+The unresolved issues concern the physical meaning of its definitions and
+the reproducibility of the exported proof files.
 
-\textbf{1. Claims.}
-The submission claims a four-dimensional continuum SU(5) theory
-with three generations of left-handed fermions in
+\textbf{What is claimed.}
+The submission claims a four-dimensional continuum SU(5) gauge theory with
+three generations of left-handed fermions in
 $\mathbf{10}\oplus\overline{\mathbf5}$, at arbitrarily weak reference coupling.
-One lattice history and selected vacuum support the stated reconstruction,
-chirality and running conditions. The gauge-invariant observable theory has
-reflection positivity on specified positive-time tests, locality, positive
-energy, Poincar\'e covariance, a cyclic vacuum with a unique
-translation-invariant direction, and stress-tensor Ward identities.
-Prescribed three-current readings detect handedness. A first-generation
-matter current and a gauge clover observable have a nonzero connected
-vacuum correlation at spacelike-separated compact supports.
+Its gauge-invariant observables satisfy reflection positivity on a specified
+class of positive-time tests, locality, positive energy, Poincar\'e covariance
+and stress-tensor Ward identities. The vacuum is cyclic and unique up to a
+scalar among translation-invariant states. These properties refer to the same
+sequence of lattice theories and the same vacuum.
 
-The fitted inverse coupling has leading ultraviolet coefficient $43/3$,
-with gauge contribution $55/3$ and screening $4$. The precise conclusion is
-convergence of \emph{window-averaged slopes} as both starting resolution
-and window length increase, uniformly over volume rows and cutoffs that
-contain the window.
+Three-current correlations provide the proposed test of handedness. A
+first-generation matter current and a gauge clover observable have a nonzero
+connected correlation at spacelike-separated compact supports. A fitted
+inverse squared coupling has normalized slopes, averaged over increasingly
+long ranges of UV scales, tending to $43/3$: a gauge contribution
+$55/3$ minus fermion screening $4$. Convergence is uniform in volume and
+cutoff once the range fits below the cutoff and starts sufficiently far
+into the UV.
 
-\textbf{2. Completed checks.}
-All 16,523 project Lean files compiled with Lean 4.32.0 on macOS and the nine
-pinned dependencies. Both entry modules built; project source and build
-configuration hashes match the archive. The solution's axioms are only
-\texttt{propext}, \texttt{Classical.choice} and \texttt{Quot.sound}; the reference
-challenge's intentional \texttt{sorry} does not enter the solution.
+\textbf{What was checked.}
+All 16,523 project Lean files compiled on macOS with Lean 4.32.0 and the
+specified versions of all nine dependencies. Source and build-configuration hashes
+match the archive. The proof uses only the permitted foundational axioms;
+no unproved placeholders enter the solution.
 
-Linux Lean 4.35.0 Comparator matched the reference definitions and theorem
-and checked permitted axioms. Both con-ron (verified mode; 222,008 declarations)
-and Lean's default kernel accepted. Final source, export and tool hashes were
-verified. Seven controls passed: a valid proof, wrong statement, changed
-definition, extra axiom, \texttt{sorryAx}, forced checker failure, and sandbox containment.
+On Linux with Lean 4.35.0, Comparator matched the definitions and final theorem
+to the reference specification. Lean's own proof checker and con-ron
+(verified mode; 222,008 declarations) accepted the exported proofs. Seven
+controls for valid and invalid proofs, checker failure and sandbox containment
+passed. Final source, export and tool hashes were verified.
 
-An independent exact representation-weight calculation gives
-$T(\mathbf{10})=3/2$, $T(\overline{\mathbf5})=1/2$ and cubic gauge-anomaly
-cancellation. The
-\href{https://www-hep.phys.s.u-tokyo.ac.jp/~yujitach/tmp/dummies/dummiessu8.html}{standard one-loop formula}
-then gives $b_0=(11/3)5-(2/3)\,3(3/2+1/2)=43/3$.
-This checks group factors, not the submitted RG derivation.
+An independent calculation of the representation weights gives
+$T(\mathbf{10})=3/2$, $T(\overline{\mathbf5})=1/2$ and cancellation of the
+cubic gauge anomaly. The
+\href{https://www-hep.phys.s.u-tokyo.ac.jp/~yujitach/tmp/dummies/dummiessu8.html}{usual one-loop formula}
+therefore gives $b_0=55/3-4=43/3$. This checks the group factors; the
+construction's renormalization-group argument has not been independently verified.
 
-\textbf{3. Problems and unfinished checks.}
-\begin{list}{\textbullet}{\setlength{\leftmargin}{12pt}\setlength{\itemsep}{3pt}\setlength{\parsep}{0pt}\setlength{\topsep}{2pt}}
+\textbf{Open questions.}
+\begin{list}{\textbullet}{\setlength{\leftmargin}{12pt}\setlength{\itemsep}{2pt}\setlength{\parsep}{0pt}\setlength{\topsep}{2pt}}
+\item \textbf{Identification of the theory.}
+The relation between the formal lattice and continuum fields, gauge invariance
+of the chiral measure, and exclusion of unwanted mirror fermions still need
+examination.
+\item \textbf{Reflection positivity.}
+\href{https://arxiv.org/html/2611.20084v1#S3.SS2}{Lu and Shao (arXiv:2611.20084, \S3.2)}
+find an obstruction for the full free overlap Weyl-field algebra at finite
+lattice spacing in two and four dimensions, under their locality and symmetry
+conditions. Here, positivity passes from an auxiliary functional to limiting
+expectations; the relevance of their result is discussed in Appendix A.
+\item \textbf{Evidence for interactions.}
+A nonzero connected correlation rules out factorization for the chosen
+observables, but composite operators can have connected correlations in a
+free theory. The proposed test needs comparison with the free gauge--fermion
+theory using the same operator definitions.
+\item \textbf{Meaning of the running coupling.}
+The normalization explicitly inserts the pure-gauge coefficient $55/3$.
+The fitted parameter must still be related to a physically defined coupling.
+An average over long scale intervals does not determine a pointwise beta
+function, its two-loop coefficient or all-orders perturbative matching.
 \item \textbf{Reproducibility.}
-The replay uses fresh macOS exports in Linux with real bubblewrap, no external
-network and read-only inputs; it does not repeat the source build on Linux.
-Both export hashes differ from the supplied acceptance record although byte
-counts match. The cause is unresolved; our checks apply to the fresh,
-hash-recorded exports.
-\item \textbf{Chirality and operator identification.}
-We have not independently validated the lattice-to-continuum field dictionary,
-the chiral measure and its gauge invariance, or exclusion of unwanted mirror
-degrees of freedom. The representation and anomaly checks do not settle these questions.
-\item \textbf{The interaction test.}
-The mixed connected correlation excludes factorization for the specified
-observables. Free composite observables can also have connected correlations.
-Comparison with the appropriate free gauge--fermion theory using the same
-operator identifications remains to be done.
-\item \textbf{The running coupling.}
-The normalization explicitly uses the pure-gauge value $55/3$.
-Matching the fitted parameter to a physically defined coupling remains unreviewed.
-A long-window average does not establish a pointwise beta function, a two-loop
-coefficient or all-orders perturbative matching.
+The full source build was done on macOS; Linux checks used fresh proof exports
+from that build. Reference and solution export hashes differ from the supplied
+record despite matching file sizes. The cause is unknown. The successful checks
+apply to our recorded exports.
 \end{list}
 
-\textbf{Problems observed and scope.}
-No compilation or proof-checking failure was found. A monitor parsing bug and sandbox setup
-issues were corrected without changing the proof. Mass gap, confinement,
-particle spectrum and uniqueness of the continuum limit are not established
-by the reviewed target.
+The theorem does not establish a mass gap, confinement, a particle spectrum
+or uniqueness of the continuum limit.
 
-{\small\textbf{Records:}
-\href{https://github.com/yang-mills-group/chiral/blob/main/docs/su5-native-build/status.html}{Build summary};
-\href{https://github.com/yang-mills-group/chiral/blob/main/docs/su5-comparator/status.html}{Comparator and controls};
-\href{https://github.com/yang-mills-group/chiral/blob/main/docs/su5-review-checks.json}{representation diagnostics}.
-Claim sources: the archive's claim document and joint, relativistic and running targets.
-Prepared with Codex; preliminary review.}
+{\small\textbf{Check records:}
+\href{su5-native-build/status.html}{Build};
+\href{su5-comparator/status.html}{Comparator, proof checkers and controls};
+\href{su5-review-checks.json}{representation calculation}.}
+
+\newpage
+\begin{center}
+{\Large\bfseries Appendix A: reflection positivity}\par
+\vspace{3pt}
+Where positivity enters the construction
+\end{center}
+\vspace{-4pt}
+
+\textbf{The argument obtains reflection positivity for the specified observables
+after a UV limit.}
+At finite cutoff, the positivity statement applies to an auxiliary expectation
+functional. It does not establish positivity on the full Weyl-field algebra
+of the original lattice theory at every nonzero lattice spacing.
+
+For a positive-time observable $F$, the reflection-positivity condition is
+$\langle(\Theta F)F\rangle\geq0$, where $\Theta$ includes Euclidean time
+reflection and adjoint. Applied to all linear combinations of a finite family
+$F_1,\ldots,F_n$, it says that the matrix
+$M_{ab}=\langle(\Theta F_a)F_b\rangle$ is positive semidefinite.
+This supplies the nonnegative inner product used in
+Osterwalder--Schrader reconstruction. The allowed observable algebra
+determines the scope of that reconstruction.
+
+\textbf{At finite cutoff.}
+The proof distinguishes the original lattice expectations from an auxiliary
+functional built from different regulator data. Exact positivity is proved
+for the latter, on even observables (even fermion parity) with support in a
+band separated from the reflection plane by a prescribed buffer. The
+statement requires the cutoff and support to satisfy the construction's
+admissibility conditions.
+
+\textbf{Removing the cutoff.}
+For each allowed test, the difference between the original and auxiliary
+expectations tends to zero as the UV cutoff is removed. In schematic notation,
+at fixed volume and probe resolution,
+\[
+ B_k^{\rm aux}(F,F)\geq0,\qquad
+ \bigl|B_k(F,F)-B_k^{\rm aux}(F,F)\bigr|
+ \xrightarrow[k\to\infty]{}0,
+ \qquad B_k(F,F)=\langle(\Theta F)F\rangle_k.
+\]
+Here $k$ increases as the cutoff is removed. The estimate holds eventually in $k$, subject
+to a volume-dependent admissibility threshold. The proof selects convergent
+subsequences on which the two functionals have the same limit. That limit is
+nonnegative. The estimate alone does not require the original finite-cutoff
+expectation $B_k(F,F)$ to be nonnegative.
+
+\textbf{The order of limits and reconstruction.}
+Positivity is first passed through the UV limit and then through the volume
+limit. There is already a positivity statement at fixed volume after cutoff
+removal, provided the support fits the buffered band on the torus. Thus
+positivity does not have to wait until the final infinite-volume
+reconstruction, but the intermediate result has already taken a UV limit.
+
+The resulting positive forms enter the Hilbert-space construction. The final
+theorem identifies the selected state's reflection matrices with Gram matrices
+of vectors in that Hilbert space. Its domain consists of finite families of
+ordered products of observables supported in positive-time slabs. The final
+positivity clause is thus tied to the limiting correlations.
+
+\textbf{Relation to the Lu--Shao result.}
+\href{https://arxiv.org/html/2611.20084v1#S3.SS2}{Lu and Shao}
+show that the full free overlap Weyl-field algebra fails reflection positivity
+at finite spacing under their stated locality and symmetry assumptions.
+Restricted observables can remain positive, and their result does not exclude
+positivity in the continuum limit. It therefore neither directly contradicts
+the argument above nor refutes Craig's gauge-invariant measure theorem.
+
+The remaining review must identify the expectations and reflection operation
+with those of the intended chiral gauge theory, and determine whether the
+allowed observable algebra retains its claimed physical content. These
+identifications have not been independently checked.
+
+{\small\textbf{Source references:}
+\href{su5-reflection-positivity-trace.txt}{The source trace}
+gives paths, line numbers and excerpts. The main steps are
+\texttt{Ignite.boxprice} and \texttt{Smokestack.Metered.fund} (auxiliary
+positivity); \texttt{Roll.rate} and \texttt{Roll.both} (comparison);
+\texttt{Praise.lamp}, \texttt{Praise.matrix} and \texttt{Reflect.I\_axial}
+(limits); and \texttt{Legion.duo\_positive} (the final reflection matrix).}
 \end{document}

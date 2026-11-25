@@ -1,0 +1,18 @@
+{
+  "checked_utc": "2026-11-25T14:16:27.057733+00:00",
+  "edition_date": "2026-11-25",
+  "status": "final",
+  "scope": "Editorial finalization and document checks. Submission dates and verification timestamps retained. No new proof run.",
+  "documents": [
+    {
+      "source": "docs/assessment-1.tex",
+      "pdf": "docs/assessment-1.pdf",
+      "pages": 2,
+      "tex_sha256": "b6c63f7ef7d0a639266ef2cc64ac8bc67d2577b2e65b15e1bbaa40d6c1d2e5da",
+      "pdf_sha256": "251b9c18638a56dfe279d73e37d334f677694d5c11a22c00e636de1402f2b6f5",
+      "compile_warnings": [],
+      "qpdf_check": "passed",
+      "visual_review": "All pages rendered and visually inspected; no clipping or overlap. Edition date and absence of draft labels also checked in extracted PDF text."
+    }
+  ]
+}
