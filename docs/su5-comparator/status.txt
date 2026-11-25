@@ -1,0 +1,28 @@
+COMPARATOR PASSED
+24 Nov 2026 08:40:58 PM EST
+Replay elapsed 0h 59m | Free disk 75.6 GiB
+RAM 5.6 GiB; peak 26.3 GiB
+
+Comparator and both kernels accepted the unchanged proof exports. All seven control tests passed. Final source, export, configuration and tool hashes verified.
+
+Export reference: Passed
+Export solution: Passed
+Linux checker setup: Passed
+Control tests: Passed
+Reference definitions, theorem and permitted axioms: Passed
+con-ron verified kernel: Passed
+Lean default kernel: Passed
+Final hashes and evidence: Passed
+
+Docker memory returned to 8.00 GiB; engine memory verified after restart. This is the nearest slider setting to the original 8092 MiB.
+Fresh export hashes are recorded. They differ from the supplied record; both byte counts match. Independent checks use these fresh exports.
+
+Running con-ron kernel on solution
+con-ron: accepted 222008 declarations (--verified)
+con-ron kernel accepts the solution
+Running Lean default kernel on solution
+Lean default kernel accepts the solution
+Your solution is okay!
+
+Native Lean build: passed (16,523 sources). This run reuses that build.
+Updates every 3 minutes and on stage changes; stops after completion.

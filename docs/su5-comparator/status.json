@@ -1,0 +1,47 @@
+{
+  "status": "passed",
+  "stage": "complete",
+  "completed_stages": [
+    "linux-setup",
+    "controls",
+    "comparator",
+    "final-validation"
+  ],
+  "updated_utc": "2026-11-25T01:40:58.665930+00:00",
+  "note": "Comparator and both kernels accepted the unchanged proof exports. All seven control tests passed. Final source, export, configuration and tool hashes verified.",
+  "memory_change": {
+    "before_mib": 8092,
+    "requested_mib": 65536,
+    "restore_after": true,
+    "approved": true,
+    "applied_mib": 65536,
+    "restore_pending": false,
+    "restored_mib": 8192,
+    "current_mib": 8192,
+    "restored_utc": "2026-11-25T01:40:58.665930+00:00",
+    "engine_memory_bytes_after": 8321257472,
+    "exact_original_setting_restored": false,
+    "restoration_note": "Docker slider steps are 256 MiB. Restored to the nearest supported setting, 8192 MiB: 100 MiB above the original 8092 MiB. Engine is running and the saved UI setting was verified."
+  },
+  "pid": 1,
+  "checker_started_utc": "2026-11-25T00:27:27.356779+00:00",
+  "command": [
+    "/tools/bin/lake",
+    "comparator",
+    "--config",
+    "/checks/comparator.json",
+    "--challenge-from-export",
+    "/exports/reference.ndjson",
+    "--solution-from-export",
+    "/exports/solution.ndjson"
+  ],
+  "checker_commit": "eb6cafb7290e8bd5f2937522d8d804f58f02bafc",
+  "platform": "Linux-6.12.54-linuxkit-aarch64-with-glibc2.39",
+  "memory.current": "6034427904",
+  "memory.peak": "28260458496",
+  "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+  "child_pid": null,
+  "checker_exit": 0,
+  "checker_finished_utc": "2026-11-25T01:26:58.726616+00:00",
+  "finished_utc": "2026-11-25T01:27:02.105585+00:00"
+}

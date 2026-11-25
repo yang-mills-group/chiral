@@ -1,0 +1,60 @@
+{
+  "status": "passed",
+  "completed_stages": [
+    "reference-export",
+    "solution-export"
+  ],
+  "pid": 56058,
+  "exports": {
+    "reference": {
+      "path": "/Users/oai/Documents/Codex/2026-11-23/lo/work/su5-comparator/exports/reference.ndjson",
+      "bytes": 1613638699,
+      "sha256": "dc1807b8bf246495821dd6b78cdc6716a768ac7a290aa105dcac6865ab946548",
+      "matches_supplied_hash": false,
+      "metadata": {
+        "exporter": {
+          "name": "lean4export",
+          "version": "3.1.0"
+        },
+        "format": {
+          "version": "3.1.0"
+        },
+        "lean": {
+          "githash": "8c9756b28d64dab099da31a4c09229a9e6a2ef35",
+          "version": "4.32.0"
+        }
+      }
+    },
+    "solution": {
+      "path": "/Users/oai/Documents/Codex/2026-11-23/lo/work/su5-comparator/exports/solution.ndjson",
+      "bytes": 4264227620,
+      "sha256": "6341d4649507f53ae7156d836aef3298e9f08dbe59bf2eab2e093f6d69684fa8",
+      "matches_supplied_hash": false,
+      "metadata": {
+        "exporter": {
+          "name": "lean4export",
+          "version": "3.1.0"
+        },
+        "format": {
+          "version": "3.1.0"
+        },
+        "lean": {
+          "githash": "8c9756b28d64dab099da31a4c09229a9e6a2ef35",
+          "version": "4.32.0"
+        }
+      }
+    }
+  },
+  "updated_utc": "2026-11-24T23:44:41.455221+00:00",
+  "free_gib": 80.2,
+  "started_utc": "2026-11-24T23:39:27.189751+00:00",
+  "stage": "complete",
+  "verified_sources": 16523,
+  "compiler_commit": "8c9756b28d64dab099da31a4c09229a9e6a2ef35",
+  "exporter_sha256": "ef1d0587c57f9d9aabf2a54952203a4405eeb4b8f613254e93b5b83e1a74769e",
+  "exporter_source_commit": "4e7915201d3f9f04470d9eae002fa695f7cdc589",
+  "command": null,
+  "child_pid": null,
+  "exported_bytes": 4264227620,
+  "finished_utc": "2026-11-24T23:44:41.455212+00:00"
+}

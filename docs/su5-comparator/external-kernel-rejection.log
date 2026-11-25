@@ -1,0 +1,6 @@
+Running reject-probe kernel on solution
+INTENTIONAL_KERNEL_REJECTION
+reject-probe kernel rejected the solution
+Running Lean default kernel on solution
+error: reject-probe exited with 7
+Lean default kernel accepts the solution

@@ -1,0 +1,88 @@
+{
+  "status": "accepted",
+  "finished_utc": "2026-11-25T01:27:02.105240+00:00",
+  "theorem": "ChiralSU5.exists_interacting_three_generation_theory_with_exact_running",
+  "verified_sources": 16523,
+  "checker_exit": 0,
+  "kernels": [
+    "con-ron --verified --jobs=2",
+    "Lean default kernel"
+  ],
+  "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "controls": {
+    "status": "passed",
+    "results": [
+      {
+        "name": "positive",
+        "exit_code": 0,
+        "expected_exit": 0,
+        "marker": "Your solution is okay!",
+        "elapsed_seconds": 0.442,
+        "passed": true
+      },
+      {
+        "name": "statement-mismatch",
+        "exit_code": 1,
+        "expected_exit": 1,
+        "marker": "statement do not match",
+        "elapsed_seconds": 0.125,
+        "passed": true
+      },
+      {
+        "name": "forbidden-axiom",
+        "exit_code": 1,
+        "expected_exit": 1,
+        "marker": "forged",
+        "elapsed_seconds": 0.13,
+        "passed": true
+      },
+      {
+        "name": "sorry-rejected",
+        "exit_code": 1,
+        "expected_exit": 1,
+        "marker": "sorryAx",
+        "elapsed_seconds": 0.121,
+        "passed": true
+      },
+      {
+        "name": "definition-mismatch",
+        "exit_code": 1,
+        "expected_exit": 1,
+        "marker": "Const does not match between challenge and target 'chosen'",
+        "elapsed_seconds": 0.128,
+        "passed": true
+      },
+      {
+        "name": "external-kernel-rejection",
+        "exit_code": 1,
+        "expected_exit": 1,
+        "marker": "INTENTIONAL_KERNEL_REJECTION",
+        "elapsed_seconds": 0.284,
+        "passed": true
+      },
+      {
+        "name": "containment",
+        "exit_code": 0,
+        "expected_exit": 0,
+        "marker": "CONTAINMENT_PASSED",
+        "elapsed_seconds": 0.279,
+        "passed": true
+      }
+    ],
+    "finished_utc": "2026-11-25T00:00:26.644626+00:00"
+  },
+  "comparison_log_sha256": "3632eab26fa2a09e899aedc8cb3c95344ad08d3ac86dd200277bab9de2874a26",
+  "export_hashes": {
+    "reference": "dc1807b8bf246495821dd6b78cdc6716a768ac7a290aa105dcac6865ab946548",
+    "solution": "6341d4649507f53ae7156d836aef3298e9f08dbe59bf2eab2e093f6d69684fa8"
+  },
+  "matches_supplied_export_hashes": {
+    "reference": false,
+    "solution": false
+  },
+  "scope": "Native macOS build and export; Linux Comparator and both kernel checks with real bubblewrap. No fresh Linux source rebuild."
+}

@@ -1,0 +1,23 @@
+{
+  "baseline_url": "https://raw.githubusercontent.com/moby/profiles/main/seccomp/default.json",
+  "baseline_sha256": "3320527d4568265ac97a077609b1bfd4cfd0d789eeb9239b7e094b1526675406",
+  "additional_allowed_syscalls": [
+    "clone",
+    "unshare",
+    "setns",
+    "mount",
+    "umount2",
+    "pivot_root",
+    "mount_setattr"
+  ],
+  "restrictions": [
+    "non-root uid 1000",
+    "all outer-container capabilities dropped",
+    "no-new-privileges",
+    "network none",
+    "read-only root and mounted proof inputs",
+    "temporary scratch filesystem only"
+  ],
+  "container_systempaths": "unconfined, required for nested procfs mount; container runs non-root with all capabilities dropped",
+  "documentation": "https://docs.docker.com/reference/cli/docker/container/run/"
+}

@@ -1,0 +1,10 @@
+Running containment-probe kernel on solution
+WRITE_DENIED /checks/containment-forbidden-write
+WRITE_DENIED /evidence/containment-forbidden-write
+WRITE_DENIED /tools/containment-forbidden-write
+WRITE_DENIED /controls/Solution.ndjson
+CONTAINMENT_PASSED {"namespaces": {"user": "user:[4026532832]", "mnt": "mnt:[4026532693]", "pid": "pid:[4026532697]", "net": "net:[4026532699]"}, "interface_flags": {"lo": 73, "tunl0": 128, "gre0": 128, "gretap0": 4098, "erspan0": 4098, "ip_vti0": 128, "ip6_vti0": 128, "sit0": 128, "ip6tnl0": 128, "ip6gre0": 128}, "external_route": "unreachable"}
+containment-probe kernel accepts the solution
+Running Lean default kernel on solution
+Lean default kernel accepts the solution
+Your solution is okay!

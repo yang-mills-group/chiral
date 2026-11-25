@@ -1,0 +1,7 @@
+Running con-ron kernel on solution
+bwrap: Can't mkdir /run/user: Read-only file system
+con-ron kernel rejected the solution
+Running Lean default kernel on solution
+bwrap: Can't mkdir /run/user: Read-only file system
+error: con-ron exited with 1
+Lean default kernel rejected the solution

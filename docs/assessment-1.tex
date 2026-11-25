@@ -22,9 +22,8 @@
 \end{center}
 \vspace{-4pt}
 
-\textbf{Native Lean compilation and the main theorem's axiom check pass.}
-The broader independent validation in our November Yang--Mills and QCD
-reviews has not yet been repeated here.
+\textbf{The build, reference comparison and both kernel checks pass.}
+Physical interpretation and export reproducibility still require further review.
 
 \textbf{1. Claims.}
 The submission claims a four-dimensional continuum SU(5) theory
@@ -46,58 +45,59 @@ and window length increase, uniformly over volume rows and cutoffs that
 contain the window.
 
 \textbf{2. Completed checks.}
-On 24 November, all 16,523 project Lean files compiled using Lean 4.32.0
-on macOS with the nine pinned dependencies. Both entry modules built; all
-project source hashes and build-configuration hashes still match the archive.
-The solution theorem's axiom report contains only \texttt{propext},
-\texttt{Classical.choice} and \texttt{Quot.sound}, with no \texttt{sorryAx}.
-The reference challenge's intentional \texttt{sorry} does not enter the solution.
+All 16,523 project Lean files compiled with Lean 4.32.0 on macOS and the nine
+pinned dependencies. Both entry modules built; project source and build
+configuration hashes match the archive. The solution's axioms are only
+\texttt{propext}, \texttt{Classical.choice} and \texttt{Quot.sound}; the reference
+challenge's intentional \texttt{sorry} does not enter the solution.
 
-An independent exact polynomial check of the representation weights gives
-$T(\mathbf{10})=3/2$, $T(\overline{\mathbf5})=1/2$ and cancellation of the
-cubic gauge-anomaly trace. Substitution into the
+Linux Lean 4.35.0 Comparator matched the reference definitions and theorem
+and checked permitted axioms. Both con-ron (verified mode; 222,008 declarations)
+and Lean's default kernel accepted. Final source, export and tool hashes were
+verified. Seven controls passed: a valid proof, wrong statement, changed
+definition, extra axiom, \texttt{sorryAx}, forced checker failure, and sandbox containment.
+
+An independent exact representation-weight calculation gives
+$T(\mathbf{10})=3/2$, $T(\overline{\mathbf5})=1/2$ and cubic gauge-anomaly
+cancellation. The
 \href{https://www-hep.phys.s.u-tokyo.ac.jp/~yujitach/tmp/dummies/dummiessu8.html}{standard one-loop formula}
-gives $b_0=(11/3)5-(2/3)\,3(3/2+1/2)=43/3$.
+then gives $b_0=(11/3)5-(2/3)\,3(3/2+1/2)=43/3$.
 This checks group factors, not the submitted RG derivation.
 
 \textbf{3. Problems and unfinished checks.}
 \begin{list}{\textbullet}{\setlength{\leftmargin}{12pt}\setlength{\itemsep}{3pt}\setlength{\parsep}{0pt}\setlength{\topsep}{2pt}}
-\item \textbf{Verification is incomplete.}
-The bundled log reports acceptance by Lean and con-ron. We have not replayed
-Comparator's reference comparison, the second kernel, or the negative and
-containment controls. The log's disabled-sandbox warning is attributed by
-the README to an outer sandbox; we have not verified that explanation.
-Our native run did not reproduce the Linux isolation procedure.
+\item \textbf{Reproducibility.}
+The replay uses fresh macOS exports in Linux with real bubblewrap, no external
+network and read-only inputs; it does not repeat the source build on Linux.
+Both export hashes differ from the supplied acceptance record although byte
+counts match. The cause is unresolved; our checks apply to the fresh,
+hash-recorded exports.
 \item \textbf{Chirality and operator identification.}
-The target ties representations, current readings and
-reconstruction to common data. We have not independently validated the
-lattice-to-continuum field dictionary, the chiral measure and its
-gauge invariance, or exclusion of unwanted mirror degrees of freedom.
-The representation and anomaly checks do not settle these questions.
+We have not independently validated the lattice-to-continuum field dictionary,
+the chiral measure and its gauge invariance, or exclusion of unwanted mirror
+degrees of freedom. The representation and anomaly checks do not settle these questions.
 \item \textbf{The interaction test.}
-A nonzero mixed connected correlation excludes factorization for the
-specified observables. Nonzero connected correlations also occur between
-composite observables in free theories. An independent comparison with the
-appropriate free gauge--fermion theory, retaining the same operator
-identifications, remains to be done.
+The mixed connected correlation excludes factorization for the specified
+observables. Free composite observables can also have connected correlations.
+Comparison with the appropriate free gauge--fermion theory using the same
+operator identifications remains to be done.
 \item \textbf{The running coupling.}
-The normalization explicitly uses the pure-gauge value $55/3$. Matching
-the fitted parameter to a conventional physically defined coupling requires
-further review. A long-window average does not establish a pointwise beta
-function, a two-loop coefficient or all-orders perturbative matching.
+The normalization explicitly uses the pure-gauge value $55/3$.
+Matching the fitted parameter to a physically defined coupling remains unreviewed.
+A long-window average does not establish a pointwise beta function, a two-loop
+coefficient or all-orders perturbative matching.
 \end{list}
 
 \textbf{Problems observed and scope.}
-No compilation or axiom failure was found. A monitor bug misread the
-line-wrapped axiom list; it was corrected without changing the proof.
-Mass gap, confinement, particle
-spectrum and uniqueness of the continuum limit are not established by
-the reviewed target.
+No compilation or proof-checking failure was found. A monitor parsing bug and sandbox setup
+issues were corrected without changing the proof. Mass gap, confinement,
+particle spectrum and uniqueness of the continuum limit are not established
+by the reviewed target.
 
 {\small\textbf{Records:}
-\href{su5-native-build/status.html}{Build summary};
-\href{su5-native-build/final-validation.json}{hash and axiom checks};
-\href{su5-review-checks.json}{representation diagnostics}.
+\href{https://github.com/yang-mills-group/chiral/blob/main/docs/su5-native-build/status.html}{Build summary};
+\href{https://github.com/yang-mills-group/chiral/blob/main/docs/su5-comparator/status.html}{Comparator and controls};
+\href{https://github.com/yang-mills-group/chiral/blob/main/docs/su5-review-checks.json}{representation diagnostics}.
 Claim sources: the archive's claim document and joint, relativistic and running targets.
 Prepared with Codex; preliminary review.}
 \end{document}

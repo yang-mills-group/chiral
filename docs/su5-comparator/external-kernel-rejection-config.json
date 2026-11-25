@@ -1,0 +1,19 @@
+{
+  "challenge_module": "Challenge",
+  "solution_module": "Solution",
+  "theorem_names": [
+    "comm"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "external_kernels": {
+    "reject-probe": [
+      "/usr/bin/python3",
+      "/checks/containment-probe.py",
+      "--reject"
+    ]
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "status": "passed",
+  "results": [
+    {
+      "name": "positive",
+      "exit_code": 0,
+      "expected_exit": 0,
+      "marker": "Your solution is okay!",
+      "elapsed_seconds": 0.442,
+      "passed": true
+    },
+    {
+      "name": "statement-mismatch",
+      "exit_code": 1,
+      "expected_exit": 1,
+      "marker": "statement do not match",
+      "elapsed_seconds": 0.125,
+      "passed": true
+    },
+    {
+      "name": "forbidden-axiom",
+      "exit_code": 1,
+      "expected_exit": 1,
+      "marker": "forged",
+      "elapsed_seconds": 0.13,
+      "passed": true
+    },
+    {
+      "name": "sorry-rejected",
+      "exit_code": 1,
+      "expected_exit": 1,
+      "marker": "sorryAx",
+      "elapsed_seconds": 0.121,
+      "passed": true
+    },
+    {
+      "name": "definition-mismatch",
+      "exit_code": 1,
+      "expected_exit": 1,
+      "marker": "Const does not match between challenge and target 'chosen'",
+      "elapsed_seconds": 0.128,
+      "passed": true
+    },
+    {
+      "name": "external-kernel-rejection",
+      "exit_code": 1,
+      "expected_exit": 1,
+      "marker": "INTENTIONAL_KERNEL_REJECTION",
+      "elapsed_seconds": 0.284,
+      "passed": true
+    },
+    {
+      "name": "containment",
+      "exit_code": 0,
+      "expected_exit": 0,
+      "marker": "CONTAINMENT_PASSED",
+      "elapsed_seconds": 0.279,
+      "passed": true
+    }
+  ],
+  "finished_utc": "2026-11-25T00:00:26.644626+00:00"
+}

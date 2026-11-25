@@ -1,0 +1,7 @@
+PASSED positive
+PASSED statement-mismatch
+PASSED forbidden-axiom
+PASSED sorry-rejected
+PASSED definition-mismatch
+PASSED external-kernel-rejection
+PASSED containment

@@ -18,11 +18,15 @@ The submission date follows [OpenAI's chronology](https://github.com/yang-mills-
 
 All 16,523 project Lean files compiled on macOS with the pinned dependencies. The main theorem's axiom audit found only the standard axioms and no `sorryAx`. An independent representation calculation checks the group factors, cubic anomaly cancellation, and the arithmetic giving the one-loop coefficient. This does not independently verify the submitted RG derivation.
 
-We have not replayed Comparator, its second kernel, or the supplied Linux isolation and controls. Further checks are needed for the chiral measure and gauge invariance, exclusion of mirror degrees of freedom, the operator dictionary, and comparison with an appropriate free theory. Mass gap, confinement, particle spectrum, and uniqueness of the continuum limit are not established by the reviewed target.
+**The independent Comparator replay passed on 24 November.** Linux Comparator matched the reference definitions and theorem and checked permitted axioms. Both con-ron in verified mode (222,008 declarations) and Lean's default kernel accepted. All seven controls passed, including deliberate errors, forced checker failure, and sandbox containment. The [acceptance record, logs, and configurations](docs/su5-comparator/README.md) are included here.
+
+The replay used fresh exports from the macOS build, checked on Linux with real bubblewrap, read-only inputs, and no external network. It did not rebuild the source on Linux. Both fresh export hashes differ from OpenAI's recorded hashes, although their byte counts match; the cause remains unresolved. The successful checks apply to the fresh exports identified in our records.
+
+Further physical checks are needed for the chiral measure and gauge invariance, exclusion of mirror degrees of freedom, the operator dictionary, and comparison with an appropriate free theory. Mass gap, confinement, particle spectrum, and uniqueness of the continuum limit are not established by the reviewed target.
 
 ## Documents and verification records
 
-[docs/](docs/README.md) contains the assessment, its source, build and axiom records, and representation diagnostics. The [original proof repository](https://github.com/yang-mills-group/OpenAI-chiral-20261115) preserves OpenAI's source, claim, comparator configuration, and replay instructions.
+[docs/](docs/README.md) contains the assessment, its source, build and axiom records, completed Comparator replay and controls, and representation diagnostics. The [original proof repository](https://github.com/yang-mills-group/OpenAI-chiral-20261115) preserves OpenAI's source, claim, comparator configuration, and replay instructions.
 
 ## Making a submission
 

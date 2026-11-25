@@ -1,0 +1,19 @@
+{
+  "challenge_module": "SU5ExactJointChallenge",
+  "solution_module": "SU5ExactJointSolution",
+  "theorem_names": [
+    "ChiralSU5.exists_interacting_three_generation_theory_with_exact_running"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "external_kernels": {
+    "con-ron": [
+      "/tools/bin/con-ron",
+      "--verified",
+      "--jobs=2"
+    ]
+  }
+}

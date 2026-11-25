@@ -1,0 +1,14 @@
+Running containment-probe kernel on solution
+WRITE_DENIED /checks/containment-forbidden-write
+WRITE_DENIED /evidence/containment-forbidden-write
+WRITE_DENIED /tools/containment-forbidden-write
+WRITE_DENIED /controls/Solution.ndjson
+Traceback (most recent call last):
+  File "/checks/containment-probe.py", line 20, in <module>
+    assert all(name=='lo' for _,name in interfaces), interfaces
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: [(1, 'lo'), (2, 'tunl0'), (3, 'gre0'), (4, 'gretap0'), (5, 'erspan0'), (6, 'ip_vti0'), (7, 'ip6_vti0'), (8, 'sit0'), (9, 'ip6tnl0'), (10, 'ip6gre0')]
+containment-probe kernel rejected the solution
+Running Lean default kernel on solution
+error: containment-probe exited with 1
+Lean default kernel accepts the solution

@@ -1,0 +1,10 @@
+{
+  "restored_utc": "2026-11-25T01:40:58.665930+00:00",
+  "original_mib": 8092,
+  "temporary_mib": 65536,
+  "restored_mib": 8192,
+  "engine_memory_bytes_after": 8321257472,
+  "engine_memory_bytes_during_replay": 67305488384,
+  "exact_original_setting_restored": false,
+  "note": "Docker slider steps are 256 MiB. Restored to the nearest supported setting, 8192 MiB: 100 MiB above the original 8092 MiB. Engine is running and the saved UI setting was verified."
+}

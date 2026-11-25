@@ -1,0 +1,13 @@
+{
+  "checked_utc": "2026-11-25T01:47:47.588818+00:00",
+  "pages": 1,
+  "compile": "passed",
+  "latex_warnings": [],
+  "qpdf_check": "passed",
+  "visual_inspection": "Final one-page PDF rendered and inspected; no clipping or overlap. Original 11pt font retained.",
+  "scope": "Assessment updated from the completed independent Comparator replay. Copied acceptance and logs checked against the run; current source, export and tool hashes reverified. No new proof run.",
+  "tex_sha256": "82394ca21a2a0f3c7d3e258acbee202f496dae034e665ea99c7071f484b27e73",
+  "pdf_sha256": "c9bf0ab4e981fee7efb935147bbd1d7afc227f5805615dd3b18cbd91175cbd2a",
+  "evidence_import_sha256": "e98655e8549b842e7bde3eeafcc6b333a816c28976da2d0ce777100e8e9e2a9c",
+  "group_pdf_links_checked": 3
+}

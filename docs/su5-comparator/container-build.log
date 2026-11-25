@@ -1,0 +1,35 @@
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 389B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/ubuntu@sha256:562111b88caa79c71391c0c4d3c2114a7d5c35915c20561fd893cb1e07929e6b
+#2 DONE 0.0s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 55B done
+#3 DONE 0.0s
+
+#4 [1/4] FROM docker.io/library/ubuntu@sha256:562111b88caa79c71391c0c4d3c2114a7d5c35915c20561fd893cb1e07929e6b
+#4 resolve docker.io/library/ubuntu@sha256:562111b88caa79c71391c0c4d3c2114a7d5c35915c20561fd893cb1e07929e6b done
+#4 DONE 0.0s
+
+#5 [2/4] RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends bubblewrap python3 git ca-certificates libgmp10 libstdc++6 time && rm -rf /var/lib/apt/lists/*
+#5 CACHED
+
+#6 [3/4] RUN mkdir -p /run/user
+#6 DONE 0.1s
+
+#7 [4/4] WORKDIR /runcheck
+#7 DONE 0.0s
+
+#8 exporting to image
+#8 exporting layers 0.0s done
+#8 exporting manifest sha256:e03bbb05bec4603830ec9d266fce2b6df8b4f8237ad7848f6e1a9f07297a5ead done
+#8 exporting config sha256:2ae8917e5758957c633558986027c9e1fe1a54ec0942143f4bc11ee065d5802a done
+#8 exporting attestation manifest sha256:c7336739331bdfc9088fa7923e2ecdb10a515e3e08080165685ea6dad4577cf6 done
+#8 exporting manifest list sha256:9878c20f15d97f240a4bb067cbfc1ba5adf96b285e7d45cf21988477e44f2206 done
+#8 naming to docker.io/library/su5-comparator-checker:20261124 done
+#8 unpacking to docker.io/library/su5-comparator-checker:20261124 done
+#8 DONE 0.1s
